@@ -14,6 +14,14 @@
     .topbox{
       box-shadow: 0px 5px 10px rgb(200, 200, 200);
     }
+    .qrcode-button{
+      border-style: hidden;
+      background-color: transparent;
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+      margin-bottom: 5px;
+    }
   </style>
   <body>
     <div>
@@ -27,43 +35,47 @@
           <ul class="navbar-nav">
             <!-- Saldo Button -->
             <li>
-              <a class="nav-link btn btn-outline-secondary" style="color:grey;" role="button" href="#">
+              <a class="nav-link btn btn-outline-secondary" style="color:grey;" role="button" href="saldo.html">
                 <div class="row">
                   <div class="col">Saldo :</div>
                   <div class="col">Rp100.000,00</div>
                 </div>
               </a>
             </li>
+            <br>
+            <!-- Logout Button -->
+            <li>
+              <a class="nav-link btn btn-outline-secondary" style="color:grey;" href="login.html">Logout</a>
+            </li>
           </ul>
           <br>
-          <!-- Logout Button -->
-          <form method="post">
-            <input class="form-control btn-outline-secondary" type="submit" value="Logout">
-          </form>
         </div>
       </div>
       <!-- Navbar Top -->
-      <div class="navbar sticky-top navbar-sm navbar-dark topbox" style="background-color: orange;">
+      <div class="navbar fixed-top navbar-sm navbar-dark topbox" style="background-color: orange;">
         <div class="container-fluid">
-          <!-- My Account Toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#accountCollapsed" aria-controls="accountCollapsed">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Brand Name -->
-          <span class="navbar-brand h1 mx-auto">BraveMart</span>
+          <span>
+            <!-- My Account Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#accountCollapsed" aria-controls="accountCollapsed">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Brand Name -->
+            <span class="navbar-brand h1">BraveMart</span>
+          </span>
         </div>
       </div>
       <!-- Navbar Bottom -->
       <div class="navbar-nav fixed-bottom navbar-light bg-primary">
         <div class="container-fluid">
-          <form method="post">
-            <input class="form-control" style="border-style: hidden; background-color: transparent; color:white;" type="submit" value="Scan Qr Code">
-          </form>
+          <a class="form-control nav-link qrcode-button" href="#">Scan Qr Code</a>
+          <!-- <input class="form-control qrcode-button" type="file" accept="image/*" capture="camera" value="Scan Qr Code"> -->
+          <!-- <form method="post">
+          </form> -->
         </div>
       </div>
     </div>
     <!-- Navbar Ending -->
-    <br><br><br>
+    <br><br><br><br><br><br>
     <!-- Main Page -->
     <div class="container" style="text-align: center">
       <!-- Products Card -->
@@ -74,7 +86,7 @@
             <div class="card-body">
               <h1 class="card-title">Coca Cola</h1>
               <p class="card-subtitle text-muted">Rp100.000,00</p>
-              <a class="stretched-link" href="#"></a>
+              <!-- <a class="stretched-link" href="#"></a> -->
             </div>
           </div>
         </div>
@@ -84,7 +96,7 @@
             <div class="card-body">
               <h1 class="card-title">Coca Cola</h1>
               <p class="card-subtitle text-muted">Rp100.000,00</p>
-              <a class="stretched-link" href="#"></a>
+              <!-- <a class="stretched-link" href="#"></a> -->
             </div>
           </div>
         </div>
@@ -94,7 +106,7 @@
             <div class="card-body">
               <h1 class="card-title">Coca Cola</h1>
               <p class="card-subtitle text-muted">Rp100.000,00</p>
-              <a class="stretched-link" href="#"></a>
+              <!-- <a class="stretched-link" href="#"></a> -->
             </div>
           </div>
         </div>
@@ -104,12 +116,13 @@
             <div class="card-body">
               <h1 class="card-title">Coca Cola</h1>
               <p class="card-subtitle text-muted">Rp100.000,00</p>
-              <a class="stretched-link" href="#"></a>
+              <!-- <a class="stretched-link" href="#"></a> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    <br><br><br>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
