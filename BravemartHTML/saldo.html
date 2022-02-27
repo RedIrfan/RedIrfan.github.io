@@ -25,14 +25,50 @@
         </button>
         <a class="btn" style="text-align:right;" href="index.html">
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-x-square-fill" viewBox="0 0 16 16">
-  <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
-</svg>
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+          </svg>
         </a>
       </div>
     </div>
   </header>
   <body>
-    
+    <br><br><br>
+    <div class="container card" style="text-align: center">
+      <br>
+      <h3>Sisa Saldo</h3>
+      <h6 for="">Rp10.000,00</h6>
+      <br>
+    </div>
+    <br>
+    <div class="container card">
+      <br>
+      <h3 style="text-align: center">Isi Saldo</h3>
+      <br>
+      <div class="row row-cols-2">
+        <div class="col">
+          <label for="pembayaran">Pembayaran</label>
+        </div>
+        <div class="col">
+          <select id="pembayaran" class="form-select" name="pembayaran">
+            <option value="indomaret">Indomaret</option>
+            <option value="alfamaret">Alfamaret</option>
+            <option value="atm">Atm</option>
+          </select>
+        </div>
+      </div>
+      <div class="row row-cols-2">
+        <div class="col">
+          <label for="jumlahisi">Rp</label>
+        </div>
+        <div class="col">
+          <input class="form-control" type="number" id="jumlahisi" name="jumlahisi" value="10000">
+        </div>
+      </div>
+      <br>
+      <a class="form-control btn btn-primary" href="index.html">Isi Saldo</a>
+      <br>
+    </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
