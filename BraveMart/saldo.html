@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>BraveMart - Saldo</title>
+  </head>
+  <style media="screen">
+    .topbox{
+      box-shadow: 0px 5px 10px rgb(200, 200, 200);
+      background-color: orange;
+    }
+  </style>
+  <header>
+    <div class="navbar topbox text-white">
+      <div class="container-fluid">
+        <h5 style="text-align: left">Saldo</h5>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#accountCollapsed" aria-controls="accountCollapsed">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="btn" style="text-align:right;" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-x-square-fill" viewBox="0 0 16 16">
+            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="container card" style="text-align: center; margin-top: 15vh;">
+      <br>
+      <h3>Sisa Saldo</h3>
+      <h6 id="jumlahsaldo">Rp0</h6>
+      <br>
+    </div>
+    <br>
+    <div class="container card">
+      <br>
+      <h3 style="text-align: center">Isi Saldo</h3>
+      <br>
+      <div class="row row-cols-2">
+        <div class="col">
+          <label for="pembayaran">Pembayaran</label>
+        </div>
+        <div class="col">
+          <select id="pembayaran" class="form-select" name="pembayaran">
+            <option value="indomaret">Indomaret</option>
+            <option value="alfamaret">Alfamaret</option>
+            <option value="atm">Atm</option>
+          </select>
+        </div>
+      </div>
+      <div class="row row-cols-2">
+        <div class="col">
+          <label for="jumlahisi">Rp</label>
+        </div>
+        <div class="col">
+          <input class="form-control" type="number" id="jumlahisi" name="jumlahisi" min="1000" value="10000">
+        </div>
+      </div>
+      <br>
+      <a class="form-control btn btn-primary" onclick="addSaldo()" href="index.html">Isi Saldo</a>
+      <br>
+    </div>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(event) {
+        getUsername();
+      });
+
+      function getUsername(){
+        if (sessionStorage.getItem("username") != null){
+          var jumlahSaldo = document.getElementById("jumlahsaldo");
+          var name = sessionStorage.getItem("username");
+
+          jumlahSaldo.innerText = "Rp" + JSON.parse(localStorage.getItem(name))[3];
+        }
+        else{
+          window.location.href = "login.html";
+        }
+      };
+
+      function addSaldo(){
+        var name = sessionStorage.getItem("username");
+        var jumlahIsi = document.getElementById("jumlahisi");
+
+        var newData = JSON.parse(localStorage.getItem(name));
+        newData[3] = parseInt(newData[3]) + parseInt(jumlahIsi.value);
+
+        localStorage.setItem(name, JSON.stringify(newData));
+
+        alert("Selesai");
+      };
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
