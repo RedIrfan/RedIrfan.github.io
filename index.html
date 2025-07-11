@@ -1,65 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Redirfan's Project</title>
-  </head>
-  <style>
-    body{
-      background-color: lightblue;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irfan - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    .card-img-top{
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
     }
-    .container{
-      background-color: white;
-      margin-top: 50px;
-      padding-top: 30px;
-      border-radius: 10px;
-      padding-bottom: 30px;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-    footer{
-      padding-top: 30px;
-      padding-bottom: 10px;
-      text-align: center;
-      color: rgb(200, 200, 200);
-    }
-  </style>
-  <body>
-    <div class="container top">
-      <h1 style="font-size: 60px">Hello, world!</h1>
-      <br>
-      <div class="row row-cols-1">
-        <div class="col">
-          <a class="btn btn-lg btn-primary" href="BraveMart/index.html">BraveMart 2022</a>
+</style>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-0">Hello World</h1>
+        <div class="d-flex justify-content-between">
+          <h4>my projects</h4>
+          <a href="https://redsodacan.itch.io/">itch io page</a>
         </div>
         <br>
-      </div>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gx-4 gy-2">
+            <div class="col">
+                <div class="card">
+                    <img class="img-fluid" src="metalsaviour.jpeg" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Metal Saviour (2021-2022)</h5>
+                        <p class="card-text">
+                            Game 2D Platformer berbasis android. dibuat dengan Godot Engine
+                        </p>
+                        <a href="https://redsodacan.itch.io/metal-saviour" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="unknown.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Website SPP</h5>
+                        <p class="card-text">
+                            Website untuk penyimpanan spp
+                        </p>
+                        <a href="https://github.com/RedIrfan/XII_RPL_UKK_SPP_Muhamad_Irfan_Fauzi" class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="websitedonasi.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Website Donasi (2024)</h5>
+                        <p class="card-text">
+                            Website donasi
+                        </p>
+                        <a href="https://github.com/kakafajar/websitedonasi" class="btn btn-primary">Github</a>
+                        <!-- <a href="company_profile/about-us.html" class="btn btn-primary">View</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" src="websiterestaurant.png" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Website dan Aplikasi Restaurant (2025)</h5>
+                        <p class="card-text">
+                            -
+                        </p>
+                        <a href="https://github.com/irfan-ubpk23/fp_restaurant_laravel" class="btn btn-primary">Github</a>
+                        <!-- <button disabled class="btn btn-primary">View</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
-<footer class="bg-dark">
-  <p>
-    Redirfan 2022
-  </p>
-</footer>
 </html>
