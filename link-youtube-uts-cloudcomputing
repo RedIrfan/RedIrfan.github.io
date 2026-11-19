@@ -1,0 +1,7 @@
+<a href="google.com">link youtube</a>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  window.location.href = "google.com";
+});
+</script>
